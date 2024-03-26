@@ -30,7 +30,7 @@ function onClickedEstimatePrice() {
    var z = document.getElementById("uiZ");
    var depth = document.getElementById("uiDepth");
    var estPrice = document.getElementById("uiEstimatedPrice");
-   var url = "http://127.0.0.1:5000/predict_price";
+   var url = "/api/predict_price";
 
    $.post(url, {
       carat: parseFloat(carat.value),
@@ -51,7 +51,7 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
    console.log("document loaded");
-   var url = "http://127.0.0.1:5000/get_cut_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "/api/get_cut_names"; // Use this if you are NOT using nginx which is first 7 tutorials
    $.get(url, function (data, status) {
       if (data) {
          var cut = data.cut;
@@ -63,7 +63,7 @@ function onPageLoad() {
          }
       }
    });
-   var url = "http://127.0.0.1:5000//get_color_categories"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "/api/get_color_categories"; // Use this if you are NOT using nginx which is first 7 tutorials
    $.get(url, function (data, status) {
       if (data) {
          var color = data.color;
@@ -75,7 +75,7 @@ function onPageLoad() {
          }
       }
    });
-   var url = "http://127.0.0.1:5000/get_clarity_categories"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "/api/get_clarity_categories"; // Use this if you are NOT using nginx which is first 7 tutorials
    $.get(url, function (data, status) {
       if (data) {
          var clarity = data.clarity;
