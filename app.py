@@ -88,10 +88,9 @@ with col4:
     depth = 0
     if depth_checked:
         depth = st.number_input("Depth %", 0.20, 20.01, step=0.15, key="depth")
-with col3:
-    if st.button("Predict Price", key="predict"):
-        predicted_price = predict(carat, cut, color, clarity, table, x, y, z, depth)
-        st.write(
+if st.button("Predict Price", key="predict"):
+    predicted_price = predict(carat, cut, color, clarity, table, x, y, z, depth)
+    st.write(
             "<strong>Predicted Price:</strong> $" + str(predicted_price),
             unsafe_allow_html=True,
-        )
+    )
