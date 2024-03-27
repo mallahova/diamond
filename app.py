@@ -62,7 +62,7 @@ with col1:
         "<h1 class='title'>Diamond Price Prediction</h1>", unsafe_allow_html=True
     )
     st.write(
-        "[Kaggle Notebook](https://www.kaggle.com/code/alisamalakhova/diamond-price-prediction-eda-regression-models) | [GitHub](https://github.com/mallahova/diamond)"
+        "[Kaggle Notebook](https://www.kaggle.com/code/alisamalakhova/diamond-price-prediction-eda-regression-models) | [Academic Website](https://mallahova.github.io) | [GitHub](https://github.com/mallahova/diamond)"
     )
 
 with col2:
