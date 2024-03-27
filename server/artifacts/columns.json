@@ -1,1 +1,0 @@
-{"data_columns": ["carat", "cut", "color", "clarity", "depth", "table", "x", "y", "z", "table_ratio", "volume"], "cut_categories": ["fair", "good", "very good", "premium", "ideal"], "clarity_categories": ["i1", "si2", "si1", "vs2", "vs1", "vvs2", "vvs1", "if"], "color_categories": ["j", "i", "h", "g", "f", "e", "d"]}
